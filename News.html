@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>News | RIOT GAMES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+  <style>
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(175,37,37,1);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      opacity: 0.7;
+      text-decoration: none;
+  }
+  hr{
+        height: 1px;
+        background-color: #000000;
+        border: none;
+  }
+  .headlineimg{
+    border: 5px solid #555;
+  }
+  .articlep{
+    margin:0px 20px;
+  }
+  .firafont {
+    font-family: 'Fira Sans', sans-serif;
+  }
+  .girassolfont {
+    font-family: 'Girassol', cursive;
+  }
+  .copyright{
+    font-family:"Courier";
+    text-align: center;
+  }
+  table{
+    margin-top:30px;
+  }
+  section a, section a:active, section a:visited, section a:link{
+    color:white;
+  }
+  section a:hover{
+    text-decoration: none;
+    color:rgba(175,37,37,1);
+  }
+  </style>
+</head>
+
+<body style="background-color:#2C2929;color:white;">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <img src="logo.png" width="44" height="44" alt="Riot Logo">
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="RiotGames.html">Home</a></li>
+        <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="Games.html">Games
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color:#000000;">
+            <li><a href="Games.html">Game Gallery</a></li>
+            <li><a href="lol.html">League of Legends</a></li>
+            <li><a href="lor.html">League of Runeterra</a></li>
+            <li><a href="valo.html">Valorant</a></li>
+          </ul>
+        </li>
+      <li><a href="About.html">About Us</a></li>
+      <li class="active"><a href="News.html">News</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<section>
+  <div class="jumbotron" style="padding:2% 0% 14%;background-image: url(news-header.jpg);background-position:center;position:relative;top:-20px;text-align:center;">
+    <div class="container">
+      <h1 style="font-size: 85px" class="girassolfont">News</h1>
+	  <br />
+      <p style="font-size: 25px" class="firafont">Be updated with the latest news in the Riot Games Universe.</p>
+    </div>
+  </div>
+  <div class="container" style="position:relative;top:-140px;">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#" data-toggle="modal" data-target="#headl1Modal">
+        <table width=95%>
+          <tr>
+            <td>
+              <img src="news-headline.png" alt="Arcane Series Netflix Announcement" width="100%" class="headlineimg">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="font-size: 30px" class="girassolfont">Arcane: Animated Series | Official Netflix Announcement</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 18px" class="firafont">Arcane the animated series is coming to Netflix Fall 2021.</p>
+            </td>
+          </tr>
+        </table>
+      </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#" data-toggle="modal" data-target="#headl2Modal">
+        <table width=95%>
+          <tr>
+            <td>
+              <img src="news-headline2.png" alt="Updated Terms of Service" width="100%" class="headlineimg">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="font-size: 30px" class="girassolfont">Updating the Privacy Notice and Terms of Service</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 18px" class="firafont">We’re updating our player policies to implement a global refund policy and improve our behavior systems around voice chat.</p>
+            </td>
+          </tr>
+        </table>
+        </a>
+      </div>
+    </div>
+    <!--End of first row-->
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#" data-toggle="modal" data-target="#headl3Modal">
+        <table width=95%>
+          <tr>
+            <td>
+              <img src="news-headline3.jpg" alt="Social Impact Year In Review" width="100%" class="headlineimg">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="font-size: 30px" class="girassolfont">2020 Social Impact Year in Review</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 18px" class="firafont">Taking a look back at all the social good in 2020.</p>
+            </td>
+          </tr>
+        </table>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#" data-toggle="modal" data-target="#headl4Modal">
+        <table width=95%>
+          <tr>
+            <td>
+              <img src="news-headline4.jpg" alt="Elderwood Ornn Charity Results" width="100%" class="headlineimg">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="font-size: 30px" class="girassolfont">Elderwood Ornn Charity Skin Results</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 18px" class="firafont">You raised more than $7 million for the Riot Games Social Impact Fund with Elderwood Ornn.</p>
+            </td>
+          </tr>
+        </table>
+        </a>
+      </div>
+    </div>
+    <!--End of second row-->
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#" data-toggle="modal" data-target="#headl5Modal">
+        <table width=95%>
+          <tr>
+            <td>
+              <img src="news-headline5.jpg" alt="Gwen Champion Insight" width="100%" class="headlineimg">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="font-size: 30px" class="girassolfont">Champion Insights: Gwen</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 18px" class="firafont">Cut from a different cloth.</p>
+            </td>
+          </tr>
+        </table>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#" data-toggle="modal" data-target="#headl6Modal">
+        <table width=95%>
+          <tr>
+            <td>
+              <img src="news-headline6.jpg" alt="Client, Clarity, and State of the Game - lol pls" width="100%" class="headlineimg">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="font-size: 30px" class="girassolfont">Client, Clarity, and State of the Game - lol pls</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 18px" class="firafont">League’s executive producer Safelocked shares the latest on the client and game clarity and design director
+                Meddler covers League’s current game state.</p>
+            </td>
+          </tr>
+        </table>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--start of modal content-->
+  <div class="modal fade" id="headl1Modal" role="dialog" style="color:black;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title girassolfont" style="font-size: 30px">Arcane: Animated Series | Official Netflix Announcement</h3>
+        </div>
+        <div class="modal-body">
+          <center>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/DNwDWXTDukY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="headl2Modal" role="dialog" style="color:black;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title girassolfont" style="font-size: 30px">Updating the Privacy Notice and Terms of Service</h3>
+          <p style="font-size:18px" class="firafont">Apr 30, 2021</p>
+        </div>
+        <div class="modal-body">
+          <center>
+          <img src="news-headline2.png" alt="Updating the Privacy Notice and Terms of Service" width="65%">
+          </center>
+          <br />
+          <p class="articlep firafont" style="font-size: 18px">We want all of our games to be safe and inclusive for everyone who chooses to play them. We know
+            disruptive behavior using our voice chat is a concern for a lot of players, and we’re committed to addressing it
+            more effectively. In order for us to take action against players who use voice comms to harass others, use hate
+            speech, or otherwise disrupt your experience, we need to know what those players are saying. Which is why, moving
+            forward we’ll need the ability to analyze voice data.</p>
+            <br />
+          <h4 class="articlep girassolfont" style="font-size: 30px">TL;DR:</h4>
+          <p>
+            <ul>
+              <li style="font-size: 18px" class="firafont">We’re updating our Privacy Notice to allow us to record and evaluate voice comms when a report for disruptive
+                behavior is submitted, starting with VALORANT. If a violation is detected, we’ll take action and remove the data
+                when it is no longer needed for reviews.</li>
+              <li style="font-size: 18px" class="firafont">We’re implementing a new Terms of Service update with an updated global refund policy and adding language around
+                our anti-cheat software for current and future Riot titles.</li>
+              <li style="font-size: 18px" class="firafont">Please keep reading to get the full details on why we’re doing this, what’ll happen to your data (and how we’re
+                keeping it safe), and how this will impact you.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="headl3Modal" role="dialog" style="color:black;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title girassolfont" style="font-size: 30px">2020 Social Impact Year in Review</h3>
+          <p style="font-size: 18px" class="firafont">By Jeffrey "Kushnood" Burrell | Apr 26, 2021</p>
+        </div>
+        <div class="modal-body">
+          <center>
+          <img src="news-headline3.jpg" alt="2020 Social Impact Year in Review" width="65%">
+          </center>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">Normally we start these with an uplifting statement about the impact we’ve had last year and an update
+            on our progress so far—don’t worry, we’ll get to that—but first I wanted to say thank you. Thank you to the players, partners,
+            Rioters, and communities. Our Social Impact initiatives would never have achieved the success they did in 2020 without your
+            support, and I’m proud to have been a part of it. What you've accomplished in the face of a global pandemic has left me awed,
+            inspired, and hopeful. It’s really amazing seeing what we can accomplish when we work together to help one another.</p>
+          <p class="articlep firafont"; style="font-size: 18px">We’ll collectively remember 2020 for many reasons, but the one that stands out to me is how so many
+            strangers, organizations, and communities came together to address a litany of emergencies that came in rapid succession.
+            It’s in times like these that our commitment to our values help center and guide us to make it better to be a player, both
+            in and out of the game.</p>
+            <br />
+          <h4 class="articlep girassolfont" style="font-size: 30px">2020 Highlights</h4>
+          <p>
+            <ul>
+              <li style="font-size: 18px" class="firafont">Players raised over $14 million dollars for impactful nonprofits through our Dawnbringer Karma, COVID Support Bundle,
+                and Elderwood Ornn fundraisers</li>
+              <li style="font-size: 18px" class="firafont">Over 7 million players across the world voted to support over 46 local nonprofits in our Dawnbringer Karma campaign</li>
+              <li style="font-size: 18px" class="firafont">Pro players shared tips and stories about maintaining a healthy mindset, and we partnered with Crisis Text Line to
+                provide players with free, confidential mental health crisis support</li>
+              <li style="font-size: 18px" class="firafont">Rioters continued to support local nonprofits throughout the year, with Riot matching more than $220,000 in individual
+                donations for a total of nearly $500,000 in donations</li>
+              <li style="font-size: 18px" class="firafont">Pledged $1,000,000 invest in minority-owned small businesses, create opportunities for underrepresented groups, address
+                biases and discrimination in the workforce, and support justice reform</li>
+              <li style="font-size: 18px" class="firafont">Even though we were all working from home, we continued to pay our support staff (including security, facilities, and
+                our contingent workforce) their full salaries throughout the pandemic</li>
+            </ul>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="headl4Modal" role="dialog" style="color:black;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title girassolfont" style="font-size: 30px">Elderwood Ornn Charity Skin Results</h3>
+          <p style="font-size: 18px" class="firafont">By Jeffrey "Kushnood" Burrell | Apr 22, 2021</p>
+        </div>
+        <div class="modal-body">
+          <center>
+          <img src="news-headline4.jpg" alt="Elderwood Ornn Charity Skin Results" width="65%">
+          </center>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">From the end of last year to early January, you all rallied around the ancient shaper of the Elderwood
+            and keeper of divine knowledge by purchasing Elderwood Ornn, the 2020 Charity Skin. In total, the global League community
+            raised more than $7 million for the Riot Games Social Impact Fund.</p>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">All of us at Riot are incredibly humbled to have beaten Dawnbringer Karma’s $6 million—and we’re sure
+            Ornn mains are, too.</p>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">Thank you all so much for continuing to support highly impactful organizations around the world. We hope
+            you’ll join us again in this year’s charity fundraiser, so we can continue to build a better world together.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="headl5Modal" role="dialog" style="color:black;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title girassolfont" style="font-size: 30px">Champion Insights: Gwen</h3>
+          <p style="font-size: 18px" class="firafont">By Erika "Cashmiir" Haas | Mar 31, 2021</p>
+        </div>
+        <div class="modal-body">
+          <center>
+          <img src="news-headline5.jpg" alt="Champion Insights: Gwen" width="65%">
+          </center>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">Do you remember your favorite childhood toy? Was it a white teddy bear? Or a beefy action figure? Or
+            perhaps a princess who reigned over Stuffed Animal Kingdom by day and fought crime by night?</p>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">These toys, and the memories they awaken, are universal. No matter where you’re from, no matter
+            the circumstances of your childhood, no matter your race or identity or background... we all have that one toy. So
+            what’s stopping a Runeterran from having one?</p>
+          <br />
+          <p class="articlep firafont"; style="font-size: 18px">Who’s to say a Camavoran peasant girl never ran through a field of wheat with her selfmade
+            princess doll in tow? They would’ve stayed in that golden field until day turned to night. Gwen, she’d have been
+            called—a name that sounded so perfectly royal to her young maker. The doll’s dress lovingly crafted to match the
+            intricate designs on the Camavoran warships in the harbor. Everything about her made by a girl who dreamed of one
+            day going to the castle herself.</p>
+          <br />
+          <p class="articlep firafont";  style="font-size: 18px">And maybe one day they’d get that chance. Doll and maker would travel across the sea, experience
+            royal life, and maybe, just maybe, marry the prince. And then the three would live happily ever after.</p>
+          <br />
+          <p class="articlep"; style="font-family: 'Fira Sans', sans-serif; font-size: 18px">Except that’s not how the story ended. Not this one, anyway.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="headl6Modal" role="dialog" style="color:black;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title girassolfont" style="font-size: 30px">Client, Clarity, and State of the Game - lol pls</h3>
+        </div>
+        <div class="modal-body">
+          <center>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/pIez_vtlg-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-angle-double-up"></button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<footer style="margin-left:auto;margin-right:auto;background-color:#2C2929;color:white;margin-top:50px;">
+  <hr />
+  <center>
+  <a href="https://www.facebook.com/RiotGames/" class="fa fa-facebook-square"></a>
+  <a href="https://twitter.com/riotgames?s=20" class="fa fa-twitter-square"></a>
+  <a href="https://www.youtube.com/c/riotgames/featured" class="fa fa-youtube-square"></a>
+  <p class="copyright" style= "color: #C7C3C1">By:	Beltran,		Domingo,		Miguel,		Quinto</p>
+  <p class="copyright" style="color: #9D9B99">©2017 Riot Games. All Rights Reserved.</p>
+  <br />
+  </center>
+</footer>
+</body>
+</html>
